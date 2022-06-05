@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@use './scss/index.scss' as *;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+body {
+  min-height: 100vh;
+  background-color:$theme;
+}
+mat-icon{
+  color: $color-white;
+  cursor: pointer;
+}
+.w-100{
+  width: 100%;
+}
+.ml{
+  margin-left: $margin;
+}
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+}

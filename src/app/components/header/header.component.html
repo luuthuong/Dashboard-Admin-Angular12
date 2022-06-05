@@ -1,0 +1,48 @@
+<mat-toolbar class="header">
+  <div class="bookmark">
+    <ng-container *ngFor="let icon of lstIcon.bookmark">
+      <mat-icon [matTooltip]="icon.tooltip" [matTooltipPosition]="'above'" matTooltipHideDelay="0"
+        matTooltipClass="mat-tooltip">
+        {{icon.name}}
+      </mat-icon>
+    </ng-container>
+  </div>
+  <div class="right">
+    <div class="lang" [matMenuTriggerFor]="menu">English</div>
+    <mat-menu #menu="matMenu" xPosition="before">
+      <ng-container *ngFor="let lang of language">
+        <button class="item-lang" mat-menu-item>
+          <img width="50px" [src]="lang.image" alt="">
+          <div style="margin-left:10px ;width: 100%;text-align: left;">{{lang.name}}</div>
+        </button>
+      </ng-container>
+    </mat-menu>
+    <ng-container *ngFor="let icon of lstIcon.notification">
+      <mat-icon [matTooltip]="icon.tooltip" matTooltipPosition="above" matTooltipHideDelay="0"
+        matTooltipClass="mat-tooltip">
+        {{icon.name}}
+      </mat-icon>
+    </ng-container>
+    <div class="img" [matMenuTriggerFor]="menuProfile">
+      <img width="50px" height="50px"
+        src="https://images.pexels.com/photos/6934325/pexels-photo-6934325.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="">
+      <span></span>
+    </div>
+    <mat-menu #menuProfile>
+      <div *ngFor="let item of menuAvatar.account">
+        <button mat-menu-item class="button-item">
+          <mat-icon>{{item.icon}}</mat-icon>
+          <div class="w-100 ml text-left">{{item.title}}</div>
+        </button>
+      </div>
+      <hr>
+      <div *ngFor="let item of menuAvatar.options">
+        <button mat-menu-item class="button-item">
+          <mat-icon>{{item.icon}}</mat-icon>
+          <div class="w-100 ml text-left">{{item.title}}</div>
+        </button>
+      </div>
+    </mat-menu>
+  </div>
+</mat-toolbar>

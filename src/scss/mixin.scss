@@ -1,0 +1,7 @@
+@use './variable.scss' as *;
+
+@mixin flexCenter($justifyContent:center,$alignItem:center){
+  display: flex !important;
+  justify-content: $justifyContent !important;
+  align-items:$alignItem !important;
+}

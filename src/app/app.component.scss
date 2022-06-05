@@ -1,0 +1,7 @@
+@use '../scss/index.scss' as *;
+.sidebar{
+  width: 200px;
+  height: 100%;
+  background-color: $theme;
+  box-shadow: $box-shadow;
+}

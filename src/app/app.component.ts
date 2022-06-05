@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Netpower-app';
+  title = 'Dashboard';
+  press(e:any){
+    e.toggle();
+    console.log(e._animationState)
+  }
 }

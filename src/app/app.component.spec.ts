@@ -23,7 +23,7 @@ describe('AppComponent', () => {
   it(`should have as title 'Netpower-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Netpower-app');
+    expect(app.title).toEqual('Dashboard');
   });
 
   it('should render title', () => {
