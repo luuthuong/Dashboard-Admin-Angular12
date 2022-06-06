@@ -3,8 +3,7 @@
     <app-sidebar></app-sidebar>
   </mat-drawer>
   <mat-drawer-content>
-    <app-header></app-header>
-    <button mat-button (click)="press(drawer)">click</button>
+    <app-header [inputMenu]="drawer"></app-header>
   </mat-drawer-content>
 </mat-drawer-container>
 

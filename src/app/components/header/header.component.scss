@@ -8,6 +8,9 @@
   &> *~*{
     margin-left: $margin;
   }
+  .icon-menu{
+    transform: translateX(-15px);
+  }
 }
 .lang{
   color: $color-white;

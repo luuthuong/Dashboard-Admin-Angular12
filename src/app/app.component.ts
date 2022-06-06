@@ -7,8 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Dashboard';
-  press(e:any){
-    e.toggle();
-    console.log(e._animationState)
-  }
+
 }

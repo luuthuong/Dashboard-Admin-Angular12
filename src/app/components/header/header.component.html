@@ -1,5 +1,6 @@
 <mat-toolbar class="header">
   <div class="bookmark">
+    <mat-icon class="icon-menu" (click)="onMenu()" >{{inputMenu._animationState==='void'?'menu':'menu_open'}}</mat-icon>
     <ng-container *ngFor="let icon of lstIcon.bookmark">
       <mat-icon [matTooltip]="icon.tooltip" [matTooltipPosition]="'above'" matTooltipHideDelay="0"
         matTooltipClass="mat-tooltip">

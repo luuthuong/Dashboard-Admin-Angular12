@@ -11,7 +11,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select'
 import {MatSidenavModule} from '@angular/material/sidenav';
-
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatBadgeModule} from '@angular/material/badge';
 const MaterialComponent=[
     MatGridListModule,
     MatCardModule,
@@ -23,7 +24,9 @@ const MaterialComponent=[
     MatTooltipModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatExpansionModule,
+    MatBadgeModule
 ]
 
 @NgModule({
